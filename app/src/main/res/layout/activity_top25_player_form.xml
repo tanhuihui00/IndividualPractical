@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Top25PlayerForm">
+
+
+    <TextView
+        android:id="@+id/winnerMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="Congratulation!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:fontFamily="monospace"/>
+
+    <TextView
+        android:id="@+id/winnerMsg2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/winnerMsg"
+        android:text="Enter your name to be stored in our Top 25 Winner List."
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:fontFamily="monospace"/>
+
+    <EditText
+        android:id="@+id/winnerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/winnerMsg2"
+        android:hint="Your name..."
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:fontFamily="monospace"/>
+</RelativeLayout>

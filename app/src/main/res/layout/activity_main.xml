@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/light_green">
+
+    <ImageButton
+        android:id="@+id/backHomeBtn"
+        android:layout_width="45dip"
+        android:layout_height="45dip"
+        android:background="@drawable/home"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/space"/>
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="10dip"
+        android:layout_height="45dip"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/closeAppBtn"/>
+
+    <ImageButton
+        android:id="@+id/closeAppBtn"
+        android:background="@drawable/exit"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_alignParentRight="true"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="5"
+        app:layout_constraintTop_toBottomOf="@id/closeAppBtn"
+        />
+
+    <LinearLayout
+        android:id="@+id/faceArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar">
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
